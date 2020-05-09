@@ -1,7 +1,7 @@
 export function selectTab(tabId) {
     console.log(tabId)
     return {
-        tyoe: 'TAB_SELECTED',
+        type: 'TAB_SELECTED',
         payload: tabId
     }
 }
