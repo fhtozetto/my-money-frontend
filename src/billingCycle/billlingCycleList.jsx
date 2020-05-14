@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { getList } from './billingCyclesActions'
 
 class BillingCyclesList extends Component {
+
+    componentWillMount() {
+        this.props.getList()
+    }
+
     render() {
         return (
             <div>
@@ -21,4 +29,6 @@ class BillingCyclesList extends Component {
     }
 }
 
-export default BillingCyclesList
+const mapStateToProps = state => ({list: state.billingCycles.list})
+const mapDispatchToProps = dispatch => bindActionCreators({getList}, dispatch)
+export default connect(mapStateToProps, mapDispatchToProps)(BillingCyclesList)
