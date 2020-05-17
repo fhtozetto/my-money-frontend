@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { getList } from './billingCyclesActions'
+import { getList } from './billingCycleActions'
 
 class BillingCyclesList extends Component {
 
