@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Field } from 'redux-form'
 import Grid from '../common/layout/grid'
-import Input from '../common/from/input'
+import Input from '../common/form/input'
 
 
 class CreditList extends Component {
